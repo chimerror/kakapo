@@ -564,10 +564,10 @@ MonoBehaviour:
   invalidCollisionColor: {r: 1, g: 0, b: 0, a: 1}
   tracerVisibility: 0
   cursorVisibility: 0
-  maximumLength: {x: 10, y: Infinity}
+  maximumLength: {x: 5, y: Infinity}
   tracerDensity: 10
   cursorRadius: 0.5
-  heightLimitAngle: 100
+  heightLimitAngle: 45
   curveOffset: 1
   rescaleTracer: 0
   cursorMatchTargetRotation: 0
@@ -602,10 +602,10 @@ MonoBehaviour:
   invalidCollisionColor: {r: 1, g: 0, b: 0, a: 1}
   tracerVisibility: 0
   cursorVisibility: 0
-  maximumLength: {x: 10, y: Infinity}
+  maximumLength: {x: 5, y: Infinity}
   tracerDensity: 10
   cursorRadius: 0.5
-  heightLimitAngle: 100
+  heightLimitAngle: 45
   curveOffset: 1
   rescaleTracer: 0
   cursorMatchTargetRotation: 0
