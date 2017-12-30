@@ -921,7 +921,7 @@ MonoBehaviour:
   enableTeleport: 1
   targetListPolicy: {fileID: 0}
   enableBodyCollisions: 1
-  ignoreGrabbedCollisions: 1
+  ignoreGrabbedCollisions: 0
   ignoreCollisionsWith: []
   headsetYOffset: 0.2
   movementThreshold: 0.0015
