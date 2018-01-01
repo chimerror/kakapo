@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TvController : MonoBehaviour
 {
-    public Material offMaterial;
-    public Material onMaterial;
+    public Material OffMaterial;
+    public Material OnMaterial;
 
 
     private MeshRenderer _meshRenderer;
@@ -21,11 +21,11 @@ public class TvController : MonoBehaviour
         var currentMaterials = _meshRenderer.materials;
         if (_powerOn)
         {
-            currentMaterials[1] = offMaterial;
+            currentMaterials[1] = OffMaterial;
         }
         else
         {
-            currentMaterials[1] = onMaterial;
+            currentMaterials[1] = OnMaterial;
         }
 
         _meshRenderer.materials = currentMaterials;
