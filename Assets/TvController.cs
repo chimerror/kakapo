@@ -5,8 +5,9 @@ using UnityEngine;
 public class TvController : MonoBehaviour
 {
     public Material OffMaterial;
-    public Material OnMaterial;
-
+    public Material OnCameraMaterial;
+    public Material OnTvMaterial;
+    public VideoCameraController VideoCamera;
 
     private MeshRenderer _meshRenderer;
     private bool _powerOn = false;
@@ -16,19 +17,28 @@ public class TvController : MonoBehaviour
         _meshRenderer = GetComponent<MeshRenderer>();
     }
 
-    public void AlternatePower()
+    private void Update()
     {
         var currentMaterials = _meshRenderer.materials;
-        if (_powerOn)
+        if (!_powerOn)
         {
             currentMaterials[1] = OffMaterial;
         }
+        else if (VideoCamera.PowerOn)
+        {
+            currentMaterials[1] = OnCameraMaterial;
+        }
         else
         {
-            currentMaterials[1] = OnMaterial;
+            currentMaterials[1] = OnTvMaterial;
         }
 
         _meshRenderer.materials = currentMaterials;
+    }
+
+    public void AlternatePower()
+    {
+
         _powerOn = !_powerOn;
     }
 }
