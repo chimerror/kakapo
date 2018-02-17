@@ -21,3 +21,10 @@
 sysinfo.txt
 
 \.vs/
+
+# VIM Files
+*~
+*.swp
+
+# Blender Backup
+*.blend?
